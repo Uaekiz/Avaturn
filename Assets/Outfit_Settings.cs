@@ -5,71 +5,142 @@ using System.Collections.Generic;
 
 public class KombinSistemi : MonoBehaviour
 {
-    [Header("Cinsiyet Ayarý")]
+    [Header("Cinsiyet AyarÄ±")]
     public bool isMale = true;
 
-    [Header("Hafýza")]
-    public int seciliSacIndex = 0; // 0 = Kel
+    [Header("HafÄ±za")]
+    public int seciliSacIndex = 3;
     public int seciliKombinIndex = 0;
 
-    [Header("UI Konteynýrlarý")]
-    public Transform sacButonParent;    // sac_icerik buraya gelecek
-    public Transform kombinButonParent; // kombin_icerik buraya gelecek
+    [Header("UI KonteynÄ±rlarÄ±")]
+    public Transform sacButonParent;    
+    public Transform kombinButonParent; 
     public GameObject butonPrefab;
 
     [Header("Kombin Listeleri")]
     public List<GameObject> erkekKombinler;
     public List<GameObject> kadinKombinler;
 
-    // Head altýndaki saçlarýn isimleri (Hiyerarþidekiyle ayný sýrada olmalý)
-    private string[] sacIsimleri = { "husosac", "italyansac", "serserisac", "uzunsac" };
+    [Header("Buton Renk AyarlarÄ±")]
+    public Color seciliRenk = new Color(0.9f, 0.9f, 0.9f, 1f);
+    public Color normalRenk = new Color(0.4f, 0.4f, 0.4f, 1f); 
+
+    [Header("HiyerarÅŸi AyarÄ±")]
+    public string kafaYolu = "Armature/Hips/Spine/Spine1/Spine2/Neck/Head"; // EÄŸer kadÄ±n modelinde farklÄ±ysa buradan deÄŸiÅŸtirirsin
+
+// Eski sacIsimleri dizisini sildik, artik isimleri direkt modelden okuyacaÄŸÄ±z.
+    // Buton referanslarÄ±nÄ± tutan listeler
+    private List<Button> yaratilanSacButonlari = new List<Button>();
+    private List<Button> yaratilanKombinButonlari = new List<Button>();
 
     void Start()
     {
         ButonlariOlustur();
         KarakteriGuncelle();
+        ButonRenkleriniGuncelle();
     }
 
     void ButonlariOlustur()
-    {
-        // 1. SAÇ BUTONLARI
-        // Önce Kel butonu
-        ButonYarat("Saçsýz (Kel)", 0, true, sacButonParent);
-        // Diðer saçlar
-        for (int i = 0; i < sacIsimleri.Length; i++)
-        {
-            ButonYarat(sacIsimleri[i], i + 1, true, sacButonParent);
-        }
+{
+    // Eski butonlarÄ± temizle (Fiziksel silme)
+    foreach (Transform child in sacButonParent) Destroy(child.gameObject);
+    foreach (Transform child in kombinButonParent) Destroy(child.gameObject);
 
-        // 2. KOMBÝN BUTONLARI
-        List<GameObject> aktifListe = isMale ? erkekKombinler : kadinKombinler;
-        for (int i = 0; i < aktifListe.Count; i++)
+    yaratilanSacButonlari.Clear();
+    yaratilanKombinButonlari.Clear();
+
+    List<GameObject> hedefKombinler = isMale ? erkekKombinler : kadinKombinler;
+    if (hedefKombinler.Count == 0) return;
+
+    // 1. DÄ°NAMÄ°K SAÃ‡ BUTONLARI
+    // Ä°lk kÄ±yafetin kafasÄ±nÄ± bulup iÃ§indeki saÃ§larÄ± listeliyoruz
+    Transform head = hedefKombinler[0].transform.Find(kafaYolu);
+    
+    ButonYarat("Kel", 0, true, sacButonParent); // Her zaman en Ã¼stte kel butonu
+    
+    if (head != null)
+    {
+        for (int i = 0; i < head.childCount; i++)
         {
-            ButonYarat(aktifListe[i].name, i, false, kombinButonParent);
+            // Modelin iÃ§indeki objenin adÄ±nÄ± direkt buton yazÄ±sÄ± yapÄ±yoruz
+            string sacObjesininAdi = head.GetChild(i).name;
+            ButonYarat(sacObjesininAdi, i + 1, true, sacButonParent);
         }
     }
 
-    void ButonYarat(string ad, int index, bool sacMi, Transform parent)
+    // 2. KOMBÄ°N BUTONLARI
+    for (int i = 0; i < hedefKombinler.Count; i++)
+    {
+        ButonYarat(hedefKombinler[i].name, i, false, kombinButonParent);
+    }
+}
+
+    void ButonYarat(string isim, int index, bool isSac, Transform parent)
     {
         GameObject yeniButon = Instantiate(butonPrefab, parent);
-        yeniButon.GetComponentInChildren<TextMeshProUGUI>().text = ad;
-        yeniButon.GetComponent<Button>().onClick.AddListener(() => {
-            if (sacMi) SacDegistir(index); else KombinDegistir(index);
-        });
+        
+        TextMeshProUGUI yazi = yeniButon.GetComponentInChildren<TextMeshProUGUI>();
+        if (yazi) yazi.text = isim;
+
+        Button btn = yeniButon.GetComponent<Button>();
+        if (btn)
+        {
+            if (isSac) yaratilanSacButonlari.Add(btn);
+            else yaratilanKombinButonlari.Add(btn);
+
+            btn.onClick.AddListener(() => 
+            {
+                if (isSac) SacDegistir(index);
+                else KombinDegistir(index);
+            });
+        }
     }
 
-    public void SacDegistir(int index) { seciliSacIndex = index; SaciUygula(); }
-    public void KombinDegistir(int index) { seciliKombinIndex = index; KarakteriGuncelle(); }
+    public void SacDegistir(int index) 
+    { 
+        seciliSacIndex = index; 
+        SaciUygula(); 
+        ButonRenkleriniGuncelle(); 
+    }
+
+    public void KombinDegistir(int index) 
+    { 
+        seciliKombinIndex = index; 
+        KarakteriGuncelle(); 
+        ButonRenkleriniGuncelle(); 
+    }
+
+    void ButonRenkleriniGuncelle()
+    {
+        // 1. SaÃ§ ButonlarÄ±nÄ± Boya
+        for (int i = 0; i < yaratilanSacButonlari.Count; i++)
+        {
+            Image img = yaratilanSacButonlari[i].GetComponent<Image>();
+            if (img)
+            {
+                img.color = (i == seciliSacIndex) ? seciliRenk : normalRenk;
+            }
+        }
+
+        // 2. Kombin ButonlarÄ±nÄ± Boya
+        for (int i = 0; i < yaratilanKombinButonlari.Count; i++)
+        {
+            Image img = yaratilanKombinButonlari[i].GetComponent<Image>();
+            if (img)
+            {
+                img.color = (i == seciliKombinIndex) ? seciliRenk : normalRenk;
+            }
+        }
+    }
 
     void KarakteriGuncelle()
     {
         List<GameObject> liste = isMale ? erkekKombinler : kadinKombinler;
-        // Hepsini kapat
+        
         foreach (var k in erkekKombinler) if (k) k.SetActive(false);
         foreach (var k in kadinKombinler) if (k) k.SetActive(false);
 
-        // Seçiliyi aç
-        if (seciliKombinIndex < liste.Count)
+        if (seciliKombinIndex < liste.Count && liste[seciliKombinIndex] != null)
         {
             liste[seciliKombinIndex].SetActive(true);
             SaciUygula();
@@ -77,24 +148,27 @@ public class KombinSistemi : MonoBehaviour
     }
 
     void SaciUygula()
+{
+    List<GameObject> liste = isMale ? erkekKombinler : kadinKombinler;
+    if (seciliKombinIndex >= liste.Count) return;
+
+    GameObject aktifKombin = liste[seciliKombinIndex];
+    Transform head = aktifKombin.transform.Find(kafaYolu);
+
+    if (head != null)
     {
-        List<GameObject> liste = isMale ? erkekKombinler : kadinKombinler;
-        GameObject aktifKombin = liste[seciliKombinIndex];
+        // Ã–nce tÃ¼m saÃ§larÄ± kapat
+        foreach (Transform child in head) child.gameObject.SetActive(false);
 
-        // Senin hiyerarþindeki tam yol: Armature/Hips/Spine/Spine1/Spine2/Neck/Head
-        Transform head = aktifKombin.transform.Find("Armature/Hips/Spine/Spine1/Spine2/Neck/Head");
-
-        if (head != null)
+        // EÄŸer "Kel" (0) seÃ§ili deÄŸilse, ilgili indeksteki saÃ§Ä± aÃ§
+        if (seciliSacIndex > 0)
         {
-            // Tüm saçlarý kapat
-            for (int i = 0; i < head.childCount; i++) head.GetChild(i).gameObject.SetActive(false);
-
-            // Seçili saçý aç (0 deðilse)
-            if (seciliSacIndex > 0)
+            int childIndex = seciliSacIndex - 1;
+            if (childIndex < head.childCount)
             {
-                int childIndex = seciliSacIndex - 1;
-                if (childIndex < head.childCount) head.GetChild(childIndex).gameObject.SetActive(true);
+                head.GetChild(childIndex).gameObject.SetActive(true);
             }
         }
     }
+}
 }
