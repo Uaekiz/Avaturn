@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 19799422}
   m_Layer: 0
-  m_Name: "k\u0131sasac"
+  m_Name: Dinamik Kesim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165,7 +165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 30694835}
   m_Layer: 0
-  m_Name: topuz
+  m_Name: "Da\u011F\u0131n\u0131k Topuz"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -528,7 +528,7 @@ GameObject:
   m_Component:
   - component: {fileID: 199086720}
   m_Layer: 0
-  m_Name: serserisac
+  m_Name: Modern Undercut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -814,7 +814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 340247103}
   m_Layer: 0
-  m_Name: uzunsac
+  m_Name: Hacimli Klasik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1510,7 +1510,7 @@ GameObject:
   - component: {fileID: 564246283}
   - component: {fileID: 564246282}
   m_Layer: 0
-  m_Name: italyansac
+  m_Name: "K\u0131sa Klasik"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1824,7 +1824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 635393055}
   m_Layer: 0
-  m_Name: uzunsac
+  m_Name: Hacimli Klasik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2008,7 +2008,7 @@ GameObject:
   m_Component:
   - component: {fileID: 739047715}
   m_Layer: 0
-  m_Name: atkuyrugu
+  m_Name: "Da\u011F\u0131n\u0131kAt Kuyru\u011Fu"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2124,7 +2124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 793431166}
   m_Layer: 0
-  m_Name: topuz
+  m_Name: "Da\u011F\u0131n\u0131k Topuz"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2202,7 +2202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isMale: 1
-  seciliSacIndex: 0
+  seciliSacIndex: 3
   seciliKombinIndex: 0
   sacButonParent: {fileID: 1311390551}
   kombinButonParent: {fileID: 1738142962}
@@ -2215,6 +2215,9 @@ MonoBehaviour:
   - {fileID: 720921779645092095}
   - {fileID: 9164890096745701649}
   - {fileID: 928789662015202294}
+  seciliRenk: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+  normalRenk: {r: 0, g: 0, b: 0, a: 1}
+  kafaYolu: Armature/Hips/Spine/Spine1/Spine2/Neck/Head
 --- !u!114 &826137276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2471,7 +2474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 848556930}
   m_Layer: 0
-  m_Name: atkuyrugu
+  m_Name: "Da\u011F\u0131n\u0131k At Kuyru\u011Fu"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2648,7 +2651,7 @@ GameObject:
   - component: {fileID: 894167454}
   - component: {fileID: 894167453}
   m_Layer: 0
-  m_Name: italyansac
+  m_Name: "K\u0131sa Klasik"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2729,7 +2732,7 @@ GameObject:
   m_Component:
   - component: {fileID: 906489590}
   m_Layer: 0
-  m_Name: topuz
+  m_Name: "Da\u011F\u0131n\u0131k Topuz"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2903,7 +2906,7 @@ GameObject:
   - component: {fileID: 996234807}
   - component: {fileID: 996234806}
   m_Layer: 0
-  m_Name: husosac
+  m_Name: Modern Klasik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2944,7 +2947,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: a55924dc33f530942bf9b12cfb43e8c4, type: 3}
+  - {fileID: 6551166090268439168, guid: e12c7f50d3a29be40848a73a7fd67986, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2973,7 +2976,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996234804}
-  m_Mesh: {fileID: -4071311797262108604, guid: a55924dc33f530942bf9b12cfb43e8c4, type: 3}
+  m_Mesh: {fileID: -4071311797262108604, guid: e12c7f50d3a29be40848a73a7fd67986, type: 3}
 --- !u!1 &1003311352
 GameObject:
   m_ObjectHideFlags: 0
@@ -2984,7 +2987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1003311353}
   m_Layer: 0
-  m_Name: uzunsac
+  m_Name: Hacimli Klasik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3669,7 +3672,7 @@ GameObject:
   - component: {fileID: 1344065875}
   - component: {fileID: 1344065874}
   m_Layer: 0
-  m_Name: husosac
+  m_Name: Modern Klasik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3710,7 +3713,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: a55924dc33f530942bf9b12cfb43e8c4, type: 3}
+  - {fileID: 6551166090268439168, guid: e12c7f50d3a29be40848a73a7fd67986, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3739,7 +3742,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1344065872}
-  m_Mesh: {fileID: -4071311797262108604, guid: a55924dc33f530942bf9b12cfb43e8c4, type: 3}
+  m_Mesh: {fileID: -4071311797262108604, guid: e12c7f50d3a29be40848a73a7fd67986, type: 3}
 --- !u!1 &1369357059
 GameObject:
   m_ObjectHideFlags: 0
@@ -3967,7 +3970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1439898638}
   m_Layer: 0
-  m_Name: orgulusac
+  m_Name: "\xD6rg\xFCl\xFC"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4524,7 +4527,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1534686064}
   m_Layer: 0
-  m_Name: atkuyrugu
+  m_Name: "Da\u011F\u0131n\u0131k At Kuyrupu"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4778,7 +4781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1567741965}
   m_Layer: 0
-  m_Name: orgulusac
+  m_Name: "\xD6rg\xFCl\xFC"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4842,7 +4845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1583752149}
   m_Layer: 0
-  m_Name: serserisac
+  m_Name: Modern Undercut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5292,6 +5295,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 78810e4ecad0dc445a1eaeecfee41141, type: 3}
       propertyPath: m_Name
       value: ClothingStore
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 78810e4ecad0dc445a1eaeecfee41141, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1410138831237768843, guid: 78810e4ecad0dc445a1eaeecfee41141, type: 3}
       propertyPath: m_LocalScale.y
@@ -6134,7 +6141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1793798013}
   m_Layer: 0
-  m_Name: serserisac
+  m_Name: Modern Undercut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6167,7 +6174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1842895717}
   m_Layer: 0
-  m_Name: "k\u0131sasac"
+  m_Name: Dinamik Kesim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6283,7 +6290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1863152574}
   m_Layer: 0
-  m_Name: "k\u0131sasac"
+  m_Name: Dinamik Kesim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6421,7 +6428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1896882155}
   m_Layer: 0
-  m_Name: orgulusac
+  m_Name: "\xD6rg\xFCl\xFC"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7298,12 +7305,12 @@ GameObject:
   - component: {fileID: 1033009090917816556}
   - component: {fileID: 6392244627652084374}
   m_Layer: 0
-  m_Name: govdesondakika
+  m_Name: Sade Denim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &380650881009870339
 Transform:
   m_ObjectHideFlags: 0
@@ -7730,7 +7737,7 @@ GameObject:
   - component: {fileID: 282894287842198136}
   - component: {fileID: 6128596516382676994}
   m_Layer: 0
-  m_Name: govdeuni
+  m_Name: "Katmanl\u0131 Siyah"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7888,7 +7895,7 @@ GameObject:
   - component: {fileID: 93144188562360901}
   - component: {fileID: 6317080169577910335}
   m_Layer: 0
-  m_Name: wclean
+  m_Name: Monokrom Pembe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8270,7 +8277,7 @@ GameObject:
   - component: {fileID: 551807409334057292}
   - component: {fileID: 5857007451420042038}
   m_Layer: 0
-  m_Name: wkimpos
+  m_Name: Haki & Deri
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8366,7 +8373,7 @@ GameObject:
   - component: {fileID: 386963993663354167}
   - component: {fileID: 6034517180158472013}
   m_Layer: 0
-  m_Name: govdetwd
+  m_Name: Kahve Deri & Jean
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10573,7 +10580,7 @@ GameObject:
   - component: {fileID: 8186503439003629078}
   - component: {fileID: 8186503439003629077}
   m_Layer: 0
-  m_Name: italyansac
+  m_Name: "K\u0131sa Klasik"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12865,7 +12872,7 @@ GameObject:
   - component: {fileID: 7629821252447112761}
   - component: {fileID: 7629821252447112760}
   m_Layer: 0
-  m_Name: husosac
+  m_Name: Modern Klasik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18316,7 +18323,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: a55924dc33f530942bf9b12cfb43e8c4, type: 3}
+  - {fileID: 6551166090268439168, guid: e12c7f50d3a29be40848a73a7fd67986, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18345,7 +18352,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4191091634461741906}
-  m_Mesh: {fileID: -4071311797262108604, guid: a55924dc33f530942bf9b12cfb43e8c4, type: 3}
+  m_Mesh: {fileID: -4071311797262108604, guid: e12c7f50d3a29be40848a73a7fd67986, type: 3}
 --- !u!1 &7670976508781478277
 GameObject:
   m_ObjectHideFlags: 0
@@ -20958,7 +20965,7 @@ GameObject:
   - component: {fileID: 8393559962616708011}
   - component: {fileID: 2493805089484464593}
   m_Layer: 0
-  m_Name: wdugun
+  m_Name: Saf Beyaz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
