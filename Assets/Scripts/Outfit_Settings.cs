@@ -35,6 +35,7 @@ public class KombinSistemi : MonoBehaviour
 
     void Start()
     {
+        Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, true);
         ButonlariOlustur();
         KarakteriGuncelle();
         ButonRenkleriniGuncelle();
