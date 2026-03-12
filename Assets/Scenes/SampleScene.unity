@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 19799422}
   m_Layer: 0
   m_Name: Dinamik Kesim
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 30694835}
   m_Layer: 0
   m_Name: "Da\u011F\u0131n\u0131k Topuz"
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -293,6 +293,148 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91660016}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &135576723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 135576724}
+  - component: {fileID: 135576728}
+  - component: {fileID: 135576727}
+  - component: {fileID: 135576726}
+  - component: {fileID: 135576725}
+  m_Layer: 5
+  m_Name: "basl\u0131k"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &135576724
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135576723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1417442069}
+  m_Father: {fileID: 1828241929}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &135576725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135576723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: 80
+  m_PreferredWidth: -1
+  m_PreferredHeight: 80
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
+--- !u!114 &135576726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135576723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 135576727}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &135576727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135576723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &135576728
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135576723}
+  m_CullTransparentMesh: 1
 --- !u!1 &191542252
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,7 +588,7 @@ GameObject:
   - component: {fileID: 199086720}
   m_Layer: 0
   m_Name: Modern Undercut
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -481,7 +623,7 @@ GameObject:
   - component: {fileID: 287749358}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -521,7 +663,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: 481f047b0b1e00b47a7f4150d28bc51d, type: 3}
+  - {fileID: 2100000, guid: 5188b1f17580a4545b527861750dc8a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -893,7 +1035,7 @@ GameObject:
   - component: {fileID: 340247103}
   m_Layer: 0
   m_Name: Hacimli Klasik
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -928,7 +1070,7 @@ GameObject:
   - component: {fileID: 340668969}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -968,7 +1110,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: ddefbdb69eae500419f3e49149d244d6, type: 3}
+  - {fileID: 2100000, guid: ac7e42b88c17bfe4d94259b9c28ef1ef, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1234,7 +1376,7 @@ GameObject:
   - component: {fileID: 430863991}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1274,7 +1416,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 76743ab7f7469e342a1bb2816a908aff, type: 3}
+  - {fileID: 2100000, guid: 8d5fda4ac120c6446b2dcd61530cfbd4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1317,7 +1459,7 @@ GameObject:
   - component: {fileID: 454916729}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1357,7 +1499,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: ddefbdb69eae500419f3e49149d244d6, type: 3}
+  - {fileID: 2100000, guid: 452b31417c7c44b47b7c8d8d99977409, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1400,7 +1542,7 @@ GameObject:
   - component: {fileID: 539365800}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1440,7 +1582,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: ddefbdb69eae500419f3e49149d244d6, type: 3}
+  - {fileID: 2100000, guid: f25574b2a0011964b8a6379806d5d552, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1483,7 +1625,7 @@ GameObject:
   - component: {fileID: 564246282}
   m_Layer: 0
   m_Name: "K\u0131sa Klasik"
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1531,7 +1673,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 2abcc03aec902084cb46bb64963cccaa, type: 3}
+  - {fileID: 2100000, guid: 581622a22309c25419499ad951fbb451, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1566,7 +1708,7 @@ GameObject:
   - component: {fileID: 570709279}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1606,7 +1748,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 9f7eb0f5c5a6c484591bcee382a60113, type: 3}
+  - {fileID: 2100000, guid: 1c9e731b1313e824ea534ea4fe80b6d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1680,7 +1822,7 @@ GameObject:
   - component: {fileID: 577177529}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1720,7 +1862,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: 9f7eb0f5c5a6c484591bcee382a60113, type: 3}
+  - {fileID: 2100000, guid: f611d3fad4c57204f9e45682207bf569, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1903,7 +2045,7 @@ GameObject:
   - component: {fileID: 635393055}
   m_Layer: 0
   m_Name: Hacimli Klasik
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1938,7 +2080,7 @@ GameObject:
   - component: {fileID: 636869138}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1978,7 +2120,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: 2c703047e57b24241b518c6775ed8577, type: 3}
+  - {fileID: 2100000, guid: 28996f21bbd377042b5a22466427a8d1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2098,7 +2240,7 @@ GameObject:
   - component: {fileID: 739047715}
   m_Layer: 0
   m_Name: "Da\u011F\u0131n\u0131kAt Kuyru\u011Fu"
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2133,7 +2275,7 @@ GameObject:
   - component: {fileID: 746789872}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2173,7 +2315,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: 148f81cb8297f0e438296f6b1a8a3298, type: 3}
+  - {fileID: 2100000, guid: 78c2a1c27b5019d47b7a3c278967b278, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2214,7 +2356,7 @@ GameObject:
   - component: {fileID: 793431166}
   m_Layer: 0
   m_Name: "Da\u011F\u0131n\u0131k Topuz"
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2250,6 +2392,7 @@ GameObject:
   - component: {fileID: 826137274}
   - component: {fileID: 826137279}
   - component: {fileID: 826137278}
+  - component: {fileID: 826137280}
   m_Layer: 5
   m_Name: Menu_Panel
   m_TagString: Untagged
@@ -2270,12 +2413,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 829582289}
+  - {fileID: 1828241929}
   - {fileID: 1723622669}
   m_Father: {fileID: 1545485598}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 421.5, y: -166.79987}
+  m_AnchoredPosition: {x: 421.5, y: -17.5}
   m_SizeDelta: {x: 1630, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &826137274
@@ -2290,7 +2434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1817df5454f37744bcc55bc376e6cb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isMale: 1
+  isMale: 0
   seciliSacIndex: 3
   seciliKombinIndex: 0
   sacButonParent: {fileID: 1311390551}
@@ -2385,6 +2529,30 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &826137280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826137272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad31b7ac7087a24791cb5e7ab05f588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sacRenkleri:
+  - {r: 0.12156863, g: 0.12156863, b: 0.12156863, a: 1}
+  - {r: 0.17254902, g: 0.11764706, b: 0.08627451, a: 1}
+  - {r: 0.43137255, g: 0.3137255, b: 0.23137255, a: 1}
+  - {r: 0.8352941, g: 0.65882355, b: 0.3254902, a: 1}
+  - {r: 0.6313726, g: 0.2627451, b: 0.101960786, a: 1}
+  - {r: 0.41960785, g: 0.07450981, b: 0.07450981, a: 1}
+  - {r: 0.13333334, g: 0.25882354, b: 0.40784314, a: 1}
+  - {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
+  renkKutusuParent: {fileID: 972048482}
+  renkButonuPrefab: {fileID: 7651054466077702023, guid: eff322a882dd0594a98e77d257198729, type: 3}
+  karakterAnaObje: {fileID: 317431987}
 --- !u!1 &829582288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,7 +2732,7 @@ GameObject:
   - component: {fileID: 848556930}
   m_Layer: 0
   m_Name: "Da\u011F\u0131n\u0131k At Kuyru\u011Fu"
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2741,7 +2909,7 @@ GameObject:
   - component: {fileID: 894167453}
   m_Layer: 0
   m_Name: "K\u0131sa Klasik"
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2789,7 +2957,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 2abcc03aec902084cb46bb64963cccaa, type: 3}
+  - {fileID: 2100000, guid: 581622a22309c25419499ad951fbb451, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2822,7 +2990,7 @@ GameObject:
   - component: {fileID: 906489590}
   m_Layer: 0
   m_Name: "Da\u011F\u0131n\u0131k Topuz"
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2989,6 +3157,108 @@ Transform:
   - {fileID: 1620756896}
   m_Father: {fileID: 583760801}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &972048481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 972048482}
+  - component: {fileID: 972048484}
+  - component: {fileID: 972048483}
+  - component: {fileID: 972048485}
+  m_Layer: 5
+  m_Name: RenkPaletiPaneli
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &972048482
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972048481}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1828241929}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &972048483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972048481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &972048484
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972048481}
+  m_CullTransparentMesh: 1
+--- !u!114 &972048485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972048481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &996234804
 GameObject:
   m_ObjectHideFlags: 0
@@ -3002,7 +3272,7 @@ GameObject:
   - component: {fileID: 996234806}
   m_Layer: 0
   m_Name: Modern Klasik
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3042,7 +3312,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: a55924dc33f530942bf9b12cfb43e8c4, type: 3}
+  - {fileID: 2100000, guid: 714feb1dbb6093d40940cae65a4cd7c4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3071,7 +3341,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996234804}
-  m_Mesh: {fileID: -4071311797262108604, guid: a55924dc33f530942bf9b12cfb43e8c4, type: 3}
+  m_Mesh: {fileID: -4071311797262108604, guid: e12c7f50d3a29be40848a73a7fd67986, type: 3}
 --- !u!1 &1003311352
 GameObject:
   m_ObjectHideFlags: 0
@@ -3083,7 +3353,7 @@ GameObject:
   - component: {fileID: 1003311353}
   m_Layer: 0
   m_Name: Hacimli Klasik
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3118,7 +3388,7 @@ GameObject:
   - component: {fileID: 1013938154}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3158,7 +3428,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: ddefbdb69eae500419f3e49149d244d6, type: 3}
+  - {fileID: 2100000, guid: 6d86e25add66e7247a1688dd83564da0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3424,7 +3694,7 @@ GameObject:
   - component: {fileID: 1067767892}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3464,7 +3734,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 481f047b0b1e00b47a7f4150d28bc51d, type: 3}
+  - {fileID: 2100000, guid: c73a8805517aa6b4f8242e798dd976d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3612,7 +3882,7 @@ GameObject:
   - component: {fileID: 1281694373}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3652,7 +3922,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: 76743ab7f7469e342a1bb2816a908aff, type: 3}
+  - {fileID: 2100000, guid: 0a783073c720f494cba4ab17c98b6247, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3695,7 +3965,7 @@ GameObject:
   - component: {fileID: 1292483909}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3735,7 +4005,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: 2c703047e57b24241b518c6775ed8577, type: 3}
+  - {fileID: 2100000, guid: 28996f21bbd377042b5a22466427a8d1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3885,7 +4155,7 @@ GameObject:
   - component: {fileID: 1303317313}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3925,7 +4195,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 481f047b0b1e00b47a7f4150d28bc51d, type: 3}
+  - {fileID: 2100000, guid: c73a8805517aa6b4f8242e798dd976d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4085,7 +4355,7 @@ GameObject:
   - component: {fileID: 1344065874}
   m_Layer: 0
   m_Name: Modern Klasik
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4125,7 +4395,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: a55924dc33f530942bf9b12cfb43e8c4, type: 3}
+  - {fileID: 2100000, guid: 714feb1dbb6093d40940cae65a4cd7c4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4154,7 +4424,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1344065872}
-  m_Mesh: {fileID: -4071311797262108604, guid: a55924dc33f530942bf9b12cfb43e8c4, type: 3}
+  m_Mesh: {fileID: -4071311797262108604, guid: e12c7f50d3a29be40848a73a7fd67986, type: 3}
 --- !u!1 &1369357059
 GameObject:
   m_ObjectHideFlags: 0
@@ -4289,6 +4559,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1369357059}
   m_CullTransparentMesh: 1
+--- !u!1 &1417442068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1417442069}
+  - component: {fileID: 1417442071}
+  - component: {fileID: 1417442070}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1417442069
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417442068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 135576724}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1417442070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417442068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "SA\xC7 RENG\u0130"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: 97690656
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 58
+  m_fontSizeBase: 58
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1417442071
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417442068}
+  m_CullTransparentMesh: 1
 --- !u!1 &1424719371
 GameObject:
   m_ObjectHideFlags: 0
@@ -4302,7 +4706,7 @@ GameObject:
   - component: {fileID: 1424719373}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4342,7 +4746,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 2c703047e57b24241b518c6775ed8577, type: 3}
+  - {fileID: 2100000, guid: 021cf4df47169864196cee80a7ce8c9e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4383,7 +4787,7 @@ GameObject:
   - component: {fileID: 1439898638}
   m_Layer: 0
   m_Name: "\xD6rg\xFCl\xFC"
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4658,7 +5062,7 @@ GameObject:
   - component: {fileID: 1515089210}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4698,7 +5102,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 148f81cb8297f0e438296f6b1a8a3298, type: 3}
+  - {fileID: 2100000, guid: bf5157c1d39ec46408683e9ac4ae5feb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4962,7 +5366,7 @@ GameObject:
   - component: {fileID: 1534686064}
   m_Layer: 0
   m_Name: "Da\u011F\u0131n\u0131k At Kuyrupu"
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5032,7 +5436,7 @@ GameObject:
   - component: {fileID: 1542484367}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5072,7 +5476,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: 481f047b0b1e00b47a7f4150d28bc51d, type: 3}
+  - {fileID: 2100000, guid: 5188b1f17580a4545b527861750dc8a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5216,7 +5620,7 @@ GameObject:
   - component: {fileID: 1567741965}
   m_Layer: 0
   m_Name: "\xD6rg\xFCl\xFC"
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5280,7 +5684,7 @@ GameObject:
   - component: {fileID: 1583752149}
   m_Layer: 0
   m_Name: Modern Undercut
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5525,7 +5929,7 @@ GameObject:
   - component: {fileID: 1693357060}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5565,7 +5969,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 76743ab7f7469e342a1bb2816a908aff, type: 3}
+  - {fileID: 2100000, guid: 8d5fda4ac120c6446b2dcd61530cfbd4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6848,7 +7252,7 @@ GameObject:
   - component: {fileID: 1702829824}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6888,7 +7292,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 9f7eb0f5c5a6c484591bcee382a60113, type: 3}
+  - {fileID: 2100000, guid: 1c9e731b1313e824ea534ea4fe80b6d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6988,7 +7392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 815, y: -260}
+  m_AnchoredPosition: {x: 815, y: -450}
   m_SizeDelta: {x: 1550, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1723622670
@@ -7449,7 +7853,7 @@ GameObject:
   - component: {fileID: 1793798013}
   m_Layer: 0
   m_Name: Modern Undercut
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7471,6 +7875,125 @@ Transform:
   - {fileID: 1859222639}
   m_Father: {fileID: 8086522010680403007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1828241928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1828241929}
+  - component: {fileID: 1828241933}
+  - component: {fileID: 1828241932}
+  - component: {fileID: 1828241931}
+  - component: {fileID: 1828241930}
+  m_Layer: 5
+  m_Name: sac_rengi_panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1828241929
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828241928}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 135576724}
+  - {fileID: 972048482}
+  m_Father: {fileID: 826137273}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 815, y: -265}
+  m_SizeDelta: {x: 1550, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1828241930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828241928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &1828241931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828241928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 1
+  m_Spacing: 20
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &1828241932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828241928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1828241933
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828241928}
+  m_CullTransparentMesh: 1
 --- !u!1 &1842895716
 GameObject:
   m_ObjectHideFlags: 0
@@ -7482,7 +8005,7 @@ GameObject:
   - component: {fileID: 1842895717}
   m_Layer: 0
   m_Name: Dinamik Kesim
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7517,7 +8040,7 @@ GameObject:
   - component: {fileID: 1859222640}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7557,7 +8080,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: 9f7eb0f5c5a6c484591bcee382a60113, type: 3}
+  - {fileID: 2100000, guid: f611d3fad4c57204f9e45682207bf569, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7598,7 +8121,7 @@ GameObject:
   - component: {fileID: 1863152574}
   m_Layer: 0
   m_Name: Dinamik Kesim
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7736,7 +8259,7 @@ GameObject:
   - component: {fileID: 1896882155}
   m_Layer: 0
   m_Name: "\xD6rg\xFCl\xFC"
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7876,7 +8399,7 @@ GameObject:
   - component: {fileID: 1957133292}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7916,7 +8439,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 148f81cb8297f0e438296f6b1a8a3298, type: 3}
+  - {fileID: 2100000, guid: bf5157c1d39ec46408683e9ac4ae5feb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7959,7 +8482,7 @@ GameObject:
   - component: {fileID: 1960120353}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7999,7 +8522,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: 76743ab7f7469e342a1bb2816a908aff, type: 3}
+  - {fileID: 2100000, guid: 0a783073c720f494cba4ab17c98b6247, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8359,7 +8882,7 @@ GameObject:
   - component: {fileID: 2116746067}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8399,7 +8922,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 2c703047e57b24241b518c6775ed8577, type: 3}
+  - {fileID: 2100000, guid: 021cf4df47169864196cee80a7ce8c9e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8442,7 +8965,7 @@ GameObject:
   - component: {fileID: 2129340383}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8482,7 +9005,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: 148f81cb8297f0e438296f6b1a8a3298, type: 3}
+  - {fileID: 2100000, guid: 78c2a1c27b5019d47b7a3c278967b278, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10526,7 +11049,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2711361839569228455, guid: db9b175fa3393c549af0c910947187ab, type: 3}
+  - {fileID: 2100000, guid: 9996fde3099d8084bb8e3c1e3500a177, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10822,7 +11345,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2488703231447254627, guid: e57455db724d0584e82b406b4f7525b1, type: 3}
+  - {fileID: 2100000, guid: 6d2ce9e15eb49e7488320675d87b75dc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11007,7 +11530,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2711361839569228455, guid: ddefbdb69eae500419f3e49149d244d6, type: 3}
+  - {fileID: 2100000, guid: 8d1fe83030227c74b8c077822f97a9d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11120,7 +11643,7 @@ GameObject:
   - component: {fileID: 4322273752134127968}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12172,7 +12695,7 @@ GameObject:
   - component: {fileID: 8186503439003629077}
   m_Layer: 0
   m_Name: "K\u0131sa Klasik"
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12567,7 +13090,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 412148079732162349, guid: db9b175fa3393c549af0c910947187ab, type: 3}
+  - {fileID: 2100000, guid: 88652f22b3038b64bb1deaa2aa304001, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13218,7 +13741,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 412148079732162349, guid: ddefbdb69eae500419f3e49149d244d6, type: 3}
+  - {fileID: 2100000, guid: 41ce60b7af274b2438442edc6428ec0d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14464,7 +14987,7 @@ GameObject:
   - component: {fileID: 7629821252447112760}
   m_Layer: 0
   m_Name: Modern Klasik
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14665,7 +15188,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: 9f7eb0f5c5a6c484591bcee382a60113, type: 3}
+  - {fileID: 2100000, guid: f611d3fad4c57204f9e45682207bf569, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15154,7 +15677,7 @@ GameObject:
   - component: {fileID: 7789760380536008226}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15429,7 +15952,7 @@ GameObject:
   - component: {fileID: 7953041410118837151}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15562,7 +16085,7 @@ GameObject:
   - component: {fileID: 7572201543098806315}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16385,7 +16908,7 @@ GameObject:
   - component: {fileID: 6919242972503651811}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17131,7 +17654,7 @@ GameObject:
   - component: {fileID: 5929136052746309595}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17156,7 +17679,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 148f81cb8297f0e438296f6b1a8a3298, type: 3}
+  - {fileID: 2100000, guid: bf5157c1d39ec46408683e9ac4ae5feb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17884,7 +18407,7 @@ GameObject:
   - component: {fileID: 8427725165325946867}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18069,7 +18592,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 412148079732162349, guid: e57455db724d0584e82b406b4f7525b1, type: 3}
+  - {fileID: 2100000, guid: f5fed15e244c91e499384e768c742c4a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18555,7 +19078,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: 2c703047e57b24241b518c6775ed8577, type: 3}
+  - {fileID: 2100000, guid: 28996f21bbd377042b5a22466427a8d1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18605,7 +19128,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2488703231447254627, guid: ddefbdb69eae500419f3e49149d244d6, type: 3}
+  - {fileID: 2100000, guid: ca42f089195938643b689fd42738adc6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18774,7 +19297,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -2711361839569228455, guid: e57455db724d0584e82b406b4f7525b1, type: 3}
+  - {fileID: 2100000, guid: fa372b5e2d969884db4954768c55c388, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19305,7 +19828,7 @@ GameObject:
   - component: {fileID: 7218214300448528378}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19330,7 +19853,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 2c703047e57b24241b518c6775ed8577, type: 3}
+  - {fileID: 2100000, guid: 021cf4df47169864196cee80a7ce8c9e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19556,7 +20079,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2488703231447254627, guid: db9b175fa3393c549af0c910947187ab, type: 3}
+  - {fileID: 2100000, guid: 73bb12110adcb024081d3402134ea394, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19786,7 +20309,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: 76743ab7f7469e342a1bb2816a908aff, type: 3}
+  - {fileID: 2100000, guid: 0a783073c720f494cba4ab17c98b6247, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19914,7 +20437,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: a55924dc33f530942bf9b12cfb43e8c4, type: 3}
+  - {fileID: 2100000, guid: 714feb1dbb6093d40940cae65a4cd7c4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19943,7 +20466,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4191091634461741906}
-  m_Mesh: {fileID: -4071311797262108604, guid: a55924dc33f530942bf9b12cfb43e8c4, type: 3}
+  m_Mesh: {fileID: -4071311797262108604, guid: e12c7f50d3a29be40848a73a7fd67986, type: 3}
 --- !u!1 &7670976508781478277
 GameObject:
   m_ObjectHideFlags: 0
@@ -19957,7 +20480,7 @@ GameObject:
   - component: {fileID: 7670976508781478278}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19982,7 +20505,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: ddefbdb69eae500419f3e49149d244d6, type: 3}
+  - {fileID: 2100000, guid: 94ec941942de0f64da84322ae7664965, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20094,7 +20617,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 9f7eb0f5c5a6c484591bcee382a60113, type: 3}
+  - {fileID: 2100000, guid: 1c9e731b1313e824ea534ea4fe80b6d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20169,7 +20692,7 @@ GameObject:
   - component: {fileID: 7872279316627853874}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20194,7 +20717,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 76743ab7f7469e342a1bb2816a908aff, type: 3}
+  - {fileID: 2100000, guid: 8d5fda4ac120c6446b2dcd61530cfbd4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20323,7 +20846,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: ddefbdb69eae500419f3e49149d244d6, type: 3}
+  - {fileID: 2100000, guid: 4fe9996eeb365dc44bb41018d0ad2028, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20652,7 +21175,7 @@ GameObject:
   - component: {fileID: 8133327314781744618}
   m_Layer: 0
   m_Name: avaturn_hair_0
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20677,7 +21200,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 481f047b0b1e00b47a7f4150d28bc51d, type: 3}
+  - {fileID: 2100000, guid: c73a8805517aa6b4f8242e798dd976d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -20831,7 +21354,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6551166090268439168, guid: 2abcc03aec902084cb46bb64963cccaa, type: 3}
+  - {fileID: 2100000, guid: 581622a22309c25419499ad951fbb451, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21321,7 +21844,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: 481f047b0b1e00b47a7f4150d28bc51d, type: 3}
+  - {fileID: 2100000, guid: 5188b1f17580a4545b527861750dc8a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22040,7 +22563,7 @@ GameObject:
   - component: {fileID: 8878767421822450870}
   m_Layer: 0
   m_Name: avaturn_hair_1
-  m_TagString: Untagged
+  m_TagString: Hair
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22065,7 +22588,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6232655639289999283, guid: 148f81cb8297f0e438296f6b1a8a3298, type: 3}
+  - {fileID: 2100000, guid: 78c2a1c27b5019d47b7a3c278967b278, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
